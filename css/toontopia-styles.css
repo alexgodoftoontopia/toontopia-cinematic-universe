@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado interno */
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.9em; /* Reducir el tamaño de fuente */
+    }
+
+    /* Ajustar el contenedor de tarjetas */
+    .card-container {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        align-items: center; /* Centrar las tarjetas */
+        gap: 15px; /* Reducir el espacio entre tarjetas */
+        padding: 15px; /* Reducir el relleno */
+    }
+
+    /* Ajustar las tarjetas */
+    .card {
+        width: 90%; /* Hacer que las tarjetas ocupen casi todo el ancho */
+        padding: 15px; /* Reducir el relleno interno */
+    }
+
+    .card h2 {
+        font-size: 1.3em; /* Reducir el tamaño del título */
+    }
+
+    .card p {
+        font-size: 0.9em; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustar el pie de página */
+    footer {
+        font-size: 0.9em; /* Reducir el tamaño del texto */
+        padding: 8px; /* Reducir el relleno */
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.8em; /* Reducir aún más el tamaño de fuente */
+    }
+
+    /* Ajustar las tarjetas */
+    .card {
+        width: 100%; /* Hacer que las tarjetas ocupen todo el ancho */
+        padding: 10px; /* Reducir aún más el relleno interno */
+    }
+
+    .card h2 {
+        font-size: 1.1em; /* Reducir aún más el tamaño del título */
+    }
+
+    .card p {
+        font-size: 0.8em; /* Reducir aún más el tamaño del texto */
+    }
+
+    /* Ajustar el pie de página */
+    footer {
+        font-size: 0.8em; /* Reducir el tamaño del texto */
+        padding: 6px; /* Reducir el relleno */
+    }
+}
