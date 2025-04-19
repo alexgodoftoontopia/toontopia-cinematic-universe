@@ -1,0 +1,73 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Fondo oscuro como el cielo nocturno */
+    color: #e0e0e0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #162447; /* Azul oscuro inspirado en la noche */
+    color: #f0f0f0; /* Texto claro */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #1f4068; /* Línea decorativa */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h1 {
+    text-align: center; /* Centrar el título principal */
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+main h1, main h2 {
+    color: #e0e0e0; /* Texto claro */
+    border-bottom: 2px solid #1f4068; /* Línea decorativa */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #00bcd4; /* Azul brillante como un reflejo lunar */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #f0f0f0; /* Cambia a blanco al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #162447;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #1f4068;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
