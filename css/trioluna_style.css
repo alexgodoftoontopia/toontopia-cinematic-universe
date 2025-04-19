@@ -80,3 +80,68 @@ footer a {
 footer a:hover {
     color: #0056b3; /* Cambia el color al pasar el cursor */
 }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.9em; /* Reducir el tamaño de fuente */
+    }
+
+    /* Ajustar el encabezado */
+    header {
+        padding: 15px; /* Reducir el relleno */
+    }
+
+    header h1 {
+        font-size: 2em; /* Reducir el tamaño del título */
+    }
+
+    header p {
+        font-size: 1em; /* Reducir el tamaño del subtítulo */
+    }
+
+    /* Ajustar el contenido principal */
+    main {
+        padding: 15px; /* Reducir el relleno */
+    }
+
+    main h1, main h2 {
+        font-size: 1.5em; /* Reducir el tamaño de los encabezados */
+    }
+
+    ul li {
+        font-size: 0.9em; /* Reducir el tamaño del texto */
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    /* Ajustar el encabezado */
+    header h1 {
+        font-size: 1.8em; /* Reducir aún más el tamaño del título */
+    }
+
+    header p {
+        font-size: 0.9em; /* Reducir el tamaño del subtítulo */
+    }
+
+    /* Ajustar el contenido principal */
+    main {
+        padding: 10px; /* Reducir aún más el relleno */
+    }
+
+    main h1, main h2 {
+        font-size: 1.2em; /* Reducir el tamaño de los encabezados */
+    }
+
+    ul li {
+        font-size: 0.8em; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustar el pie de página */
+    footer {
+        padding: 8px; /* Reducir el relleno */
+        font-size: 0.8em; /* Reducir el tamaño del texto */
+    }
+}
