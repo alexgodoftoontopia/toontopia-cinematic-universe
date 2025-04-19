@@ -71,3 +71,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+footer a {
+    color: #007BFF; /* Cambia a un azul claro */
+    text-decoration: none; /* Opcional: sin subrayar */
+}
+
+footer a:hover {
+    color: #0056b3; /* Cambia el color al pasar el cursor */
+}
