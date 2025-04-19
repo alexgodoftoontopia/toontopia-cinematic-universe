@@ -76,3 +76,78 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.9em; /* Reducir el tamaño de fuente */
+    }
+
+    /* Ajustar el contenedor principal */
+    .container {
+        padding: 1rem; /* Reducir el relleno */
+        margin: 1rem auto; /* Reducir márgenes */
+    }
+
+    /* Ajustar el encabezado */
+    header {
+        padding: 0.8rem; /* Reducir el relleno */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Reducir el tamaño del título */
+    }
+
+    /* Ajustar las secciones */
+    .section h2 {
+        font-size: 1.2rem; /* Reducir el tamaño del encabezado */
+    }
+
+    .section ul {
+        padding-left: 1rem; /* Reducir el espaciado de las viñetas */
+    }
+
+    /* Ajustar el póster */
+    .poster {
+        width: 15rem; /* Reducir el tamaño del póster */
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.8em; /* Reducir aún más el tamaño de fuente */
+    }
+
+    /* Ajustar el contenedor principal */
+    .container {
+        padding: 0.8rem; /* Reducir aún más el relleno */
+    }
+
+    /* Ajustar el encabezado */
+    header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño del título */
+    }
+
+    /* Ajustar las secciones */
+    .section h2 {
+        font-size: 1rem; /* Reducir el tamaño del encabezado */
+    }
+
+    .section ul {
+        padding-left: 0.8rem; /* Reducir aún más el espaciado de las viñetas */
+    }
+
+    /* Ajustar el póster */
+    .poster {
+        width: 12rem; /* Reducir aún más el tamaño del póster */
+    }
+
+    /* Ajustar el pie de página */
+    footer {
+        padding: 8px; /* Reducir el relleno */
+        font-size: 0.8em; /* Reducir el tamaño del texto */
+    }
+}
