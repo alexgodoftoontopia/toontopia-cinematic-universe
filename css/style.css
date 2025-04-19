@@ -200,3 +200,70 @@ ul li {
 ul li strong {
     color: #007BFF;
 }
+
+.link-not-found {
+    color: red;
+    text-decoration: none;
+}
+
+/* Estilos generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el contenedor principal */
+    .container {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        margin: 10px; /* Reducir márgenes */
+    }
+
+    /* Ajustar la barra lateral */
+    .sidebar {
+        width: 100%; /* Ocupa todo el ancho */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    /* Ajustar el contenido principal */
+    .content {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    /* Ajustar el tamaño de los encabezados */
+    header h1 {
+        font-size: 2rem; /* Reducir tamaño del título */
+    }
+
+    header p {
+        font-size: 1rem; /* Reducir tamaño del subtítulo */
+    }
+
+    /* Ajustar las secciones */
+    section h2 {
+        font-size: 1.5rem; /* Reducir tamaño del encabezado */
+    }
+
+    ul li {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+
+    /* Ajustar los íconos */
+    .habilidades-icons {
+        gap: 10px; /* Reducir espacio entre íconos */
+    }
+
+    .icon-container {
+        max-width: 15rem; /* Reducir tamaño máximo */
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Reducir aún más el tamaño del título */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Reducir subtítulo */
+    }
+
+    .icon-container img {
+        width: 80%; /* Reducir tamaño de las imágenes */
+    }
+}
