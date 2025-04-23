@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif; /* Fuente principal */
     margin: 0; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina relleno predeterminado */
-    background-color: #1a1a2e; /* Color de fondo oscuro */
+    background-color: #000000; /* Color de fondo oscuro */
 }
 
 /* Estilo del encabezado */
 header {
-    background-color: #162447; /* Fondo del encabezado */
+    background-color: #99a753; /* Fondo del encabezado */
     color: white; /* Color del texto */
     padding: 1rem; /* Espaciado interno */
     text-align: center; /* Centra el texto */
@@ -18,7 +18,7 @@ header {
 .container {
     max-width: 800px; /* Ancho máximo del contenedor */
     margin: 2rem auto; /* Centra el contenedor horizontalmente y agrega margen vertical */
-    background: #00bcd4; /* Color de fondo del contenedor */
+    background: #134d1d; /* Color de fondo del contenedor */
     padding: 1.5rem; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
@@ -40,8 +40,14 @@ header {
     margin-bottom: 1.5rem; /* Margen inferior entre secciones */
 }
 
+.section p {
+    color: #e0e0e0; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 1.1em; /* Tamaño de fuente */
+}
+
 .section h2 {
-    color: #333; /* Color del texto del título */
+    color: #ffffff; /* Color del texto del título */
     border-bottom: 2px solid #ddd; /* Línea inferior decorativa */
     padding-bottom: 0.5rem; /* Espaciado inferior del título */
 }
@@ -49,6 +55,7 @@ header {
 .section ul {
     list-style: disc; /* Estilo de viñetas */
     padding-left: 1.5rem; /* Espaciado a la izquierda para las viñetas */
+    color:white; /* Color del texto de la lista */
 }
 
 a {
@@ -67,7 +74,7 @@ a:hover {
 
 /* Pie de página */
 footer {
-    background-color: #162447;
+    background-color: #e76310;
     color: #e0e0e0;
     text-align: center;
     padding: 10px;
