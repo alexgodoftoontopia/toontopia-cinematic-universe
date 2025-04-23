@@ -12,6 +12,10 @@ header {
     background-color: #1e1e1e;
 }
 
+h2 {
+    text-align: center;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
