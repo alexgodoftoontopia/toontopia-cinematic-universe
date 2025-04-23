@@ -50,6 +50,15 @@ header {
     color: #ccc;
 }
 
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color:aquamarine
+}
+
 /* Estilos para el pie de página */
 footer {
     text-align: center; /* Centra el texto */
