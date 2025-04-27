@@ -1,0 +1,153 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    background-color: #1a1a2e; /* Color de fondo oscuro */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #162447; /* Fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 2rem auto; /* Centra el contenedor horizontalmente y agrega margen vertical */
+    background: #00bcd4; /* Color de fondo del contenedor */
+    padding: 1.5rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Estilo para la sección del póster */
+.poster {
+    text-align: center; /* Centra el contenido */
+    margin-bottom: 1.5rem; /* Margen inferior */
+}
+
+.poster img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilo para las secciones de contenido */
+.section {
+    margin-bottom: 1.5rem; /* Margen inferior entre secciones */
+}
+
+.section h2 {
+    color: #333; /* Color del texto del título */
+    border-bottom: 2px solid #ddd; /* Línea inferior decorativa */
+    padding-bottom: 0.5rem; /* Espaciado inferior del título */
+}
+
+.section ul {
+    list-style: disc; /* Estilo de viñetas */
+    padding-left: 1.5rem; /* Espaciado a la izquierda para las viñetas */
+}
+
+a {
+    color: #00bcd4; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.poster {
+ width: 20rem;
+ height: auto; /* Asegura que la imagen se ajuste al contenedor */
+ margin: 0 auto; /* Centra la imagen */  
+}
+
+/* Pie de página */
+footer {
+    background-color: #162447;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #1f4068;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.9em; /* Reducir el tamaño de fuente */
+    }
+
+    /* Ajustar el contenedor principal */
+    .container {
+        padding: 1rem; /* Reducir el relleno */
+        margin: 1rem auto; /* Reducir márgenes */
+    }
+
+    /* Ajustar el encabezado */
+    header {
+        padding: 0.8rem; /* Reducir el relleno */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Reducir el tamaño del título */
+    }
+
+    /* Ajustar las secciones */
+    .section h2 {
+        font-size: 1.2rem; /* Reducir el tamaño del encabezado */
+    }
+
+    .section ul {
+        padding-left: 1rem; /* Reducir el espaciado de las viñetas */
+    }
+
+    /* Ajustar el póster */
+    .poster {
+        width: 15rem; /* Reducir el tamaño del póster */
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    /* Ajustar el cuerpo */
+    body {
+        font-size: 0.8em; /* Reducir aún más el tamaño de fuente */
+    }
+
+    /* Ajustar el contenedor principal */
+    .container {
+        padding: 0.8rem; /* Reducir aún más el relleno */
+    }
+
+    /* Ajustar el encabezado */
+    header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño del título */
+    }
+
+    /* Ajustar las secciones */
+    .section h2 {
+        font-size: 1rem; /* Reducir el tamaño del encabezado */
+    }
+
+    .section ul {
+        padding-left: 0.8rem; /* Reducir aún más el espaciado de las viñetas */
+    }
+
+    /* Ajustar el póster */
+    .poster {
+        width: 12rem; /* Reducir aún más el tamaño del póster */
+    }
+
+    /* Ajustar el pie de página */
+    footer {
+        padding: 8px; /* Reducir el relleno */
+        font-size: 0.8em; /* Reducir el tamaño del texto */
+    }
+}
