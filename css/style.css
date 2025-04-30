@@ -215,64 +215,48 @@ ul li strong {
     text-decoration: none;
 }
 
-/* Estilos generales para pantallas pequeñas */
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-    /* Ajustar el contenedor principal */
     .container {
-        flex-direction: column; /* Cambiar a diseño en columna */
-        margin: 10px; /* Reducir márgenes */
+        flex-direction: column;
     }
 
-    /* Ajustar la barra lateral */
     .sidebar {
-        width: 100%; /* Ocupa todo el ancho */
-        margin-bottom: 20px; /* Espaciado inferior */
+        order: 2;
     }
 
-    /* Ajustar el contenido principal */
     .content {
-        width: 100%; /* Ocupa todo el ancho */
-    }
-
-    /* Ajustar el tamaño de los encabezados */
-    header h1 {
-        font-size: 2rem; /* Reducir tamaño del título */
-    }
-
-    header p {
-        font-size: 1rem; /* Reducir tamaño del subtítulo */
-    }
-
-    /* Ajustar las secciones */
-    section h2 {
-        font-size: 1.5rem; /* Reducir tamaño del encabezado */
-    }
-
-    ul li {
-        font-size: 0.9rem; /* Reducir tamaño del texto */
-    }
-
-    /* Ajustar los íconos */
-    .habilidades-icons {
-        gap: 10px; /* Reducir espacio entre íconos */
+        order: 1;
     }
 
     .icon-container {
-        max-width: 15rem; /* Reducir tamaño máximo */
-    }
-}
-
-/* Estilos para pantallas extra pequeñas */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem; /* Reducir aún más el tamaño del título */
-    }
-
-    header p {
-        font-size: 0.9rem; /* Reducir subtítulo */
+        margin: 20px 0;
     }
 
     .icon-container img {
-        width: 80%; /* Reducir tamaño de las imágenes */
+        max-width: 90%;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .sidebar h2 {
+        font-size: 1em;
+    }
+
+    .sidebar ul li {
+        font-size: 0.9em;
+    }
+
+    .icon-container p {
+        font-size: 0.9em;
     }
 }
