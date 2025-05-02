@@ -52,6 +52,7 @@ header p {
     padding: 15px; /* Espaciado interno */
     background-color: #fff; /* Fondo blanco */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    align-self: flex-start; /* Asegura que la barra lateral no se extienda más allá del contenido */
 }
 
 .sidebar h2 {
