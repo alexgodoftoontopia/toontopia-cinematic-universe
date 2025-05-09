@@ -19,7 +19,7 @@ p {
 }
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -49,4 +49,66 @@ footer {
 footer a {
     color: #007BFF;
     text-decoration: none;
+}
+
+/* Media query para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce el padding general */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Reduce el tamaño de los encabezados */
+    }
+
+    p {
+        font-size: 0.9em; /* Reduce el tamaño del texto */
+        margin: 15px 0; /* Ajusta el margen */
+    }
+
+    .container {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 15px; /* Reduce el padding interno */
+        box-shadow: none; /* Elimina la sombra para un diseño más limpio */
+    }
+
+    ul {
+        padding: 0; /* Elimina el padding adicional */
+    }
+
+    li {
+        margin: 8px 0; /* Reduce el margen entre elementos de la lista */
+    }
+
+    a {
+        font-size: 0.9em; /* Reduce el tamaño del texto de los enlaces */
+    }
+
+    footer {
+        font-size: 0.8em; /* Reduce el tamaño del texto del pie de página */
+        margin-top: 15px; /* Ajusta el margen superior */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (máximo 480px) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em; /* Reduce aún más el tamaño de los encabezados */
+    }
+
+    p {
+        font-size: 0.8em; /* Reduce el tamaño del texto */
+    }
+
+    .container {
+        padding: 10px; /* Reduce el padding interno */
+    }
+
+    a {
+        font-size: 0.8em; /* Ajusta el tamaño del texto de los enlaces */
+    }
+
+    footer {
+        font-size: 0.7em; /* Reduce el tamaño del texto del pie de página */
+    }
 }
