@@ -33,6 +33,8 @@ h2 {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
+    align-self: flex-start; /* Asegura que la barra lateral no se extienda más allá del contenido */
+
 }
 
 .card:hover {
