@@ -70,6 +70,11 @@ footer {
     margin-top: 20px; /* Espaciado superior */
 }
 
+footer a {
+    color: #1e90ff; /* Color azul para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Ajustar el cuerpo */
