@@ -1,11 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-bottom: 60px; /* Espacio para el footer fijo */
     background-color: #121212;
     color: #fff;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 20px;
@@ -14,127 +20,100 @@ header {
 
 h2 {
     text-align: center;
+    margin-top: 40px;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+/* Scroll horizontal */
+.scroll-horizontal {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth; /* Esto hace el scroll suave */
+  gap: 60px; /* Espacio entre tarjetas */
+  padding: 20px;
+    white-space: nowrap;
+
 }
 
+.scroll-horizontal::-webkit-scrollbar {
+    height: 10px;
+}
+.scroll-horizontal::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+/* Card estilo */
 .card {
     background-color: #1e1e1e;
     border: 1px solid #333;
     border-radius: 10px;
-    width: 300px;
+    min-width: 300px;
+    flex-shrink: 0;
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-    align-self: flex-start; /* Asegura que la barra lateral no se extienda más allá del contenido */
+    scroll-snap-align: start;
+}
 
+.card a {
+    text-decoration: none;
+    color: #09d4e7;
 }
 
 .card:hover {
     transform: scale(1.05);
+    
 }
 
 .card img {
     width: 100%;
+    max-height: 400px;
+    object-fit: contain;
     border-radius: 10px;
 }
 
-.card h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-.card p {
-    font-size: 1em;
-    color: #ccc;
-}
-
-.card a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Estilos para el pie de página */
+/* Footer fijo */
 footer {
-    text-align: center; /* Centra el texto */
-    padding: 10px 0; /* Espaciado interno */
-    background-color: #222; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    margin-top: 20px; /* Espaciado superior */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #333;
+    z-index: 100;
 }
 
 footer a {
-    color: #1e90ff; /* Color azul para los enlaces */
-    text-decoration: none; /* Sin subrayado */
+    color: #09d4e7;
+    text-decoration: none;
 }
 
-/* Estilos para pantallas pequeñas */
+/* Responsive ajustes */
 @media (max-width: 768px) {
-    /* Ajustar el cuerpo */
-    body {
-        font-size: 0.9em; /* Reducir el tamaño de fuente */
-    }
-
-    /* Ajustar el contenedor de tarjetas */
-    .card-container {
-        flex-direction: column; /* Cambiar a diseño en columna */
-        align-items: center; /* Centrar las tarjetas */
-        gap: 15px; /* Reducir el espacio entre tarjetas */
-        padding: 15px; /* Reducir el relleno */
-    }
-
-    /* Ajustar las tarjetas */
     .card {
-        width: 90%; /* Hacer que las tarjetas ocupen casi todo el ancho */
-        padding: 15px; /* Reducir el relleno interno */
+        min-width: 250px;
+        padding: 15px;
     }
 
-    .card h2 {
-        font-size: 1.3em; /* Reducir el tamaño del título */
-    }
-
-    .card p {
-        font-size: 0.9em; /* Reducir el tamaño del texto */
-    }
-
-    /* Ajustar el pie de página */
-    footer {
-        font-size: 0.9em; /* Reducir el tamaño del texto */
-        padding: 8px; /* Reducir el relleno */
+    .card img {
+        max-height: 300px;
     }
 }
 
-/* Estilos para pantallas extra pequeñas */
 @media (max-width: 480px) {
-    /* Ajustar el cuerpo */
-    body {
-        font-size: 0.8em; /* Reducir aún más el tamaño de fuente */
-    }
-
-    /* Ajustar las tarjetas */
     .card {
-        width: 100%; /* Hacer que las tarjetas ocupen todo el ancho */
-        padding: 10px; /* Reducir aún más el relleno interno */
+        min-width: 200px;
     }
 
-    .card h2 {
-        font-size: 1.1em; /* Reducir aún más el tamaño del título */
+    .card img {
+        max-height: 250px;
     }
 
-    .card p {
-        font-size: 0.8em; /* Reducir aún más el tamaño del texto */
-    }
-
-    /* Ajustar el pie de página */
     footer {
-        font-size: 0.8em; /* Reducir el tamaño del texto */
-        padding: 6px; /* Reducir el relleno */
+        font-size: 0.8em;
+        padding: 8px;
     }
 }
