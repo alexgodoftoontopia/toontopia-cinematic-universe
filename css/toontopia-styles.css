@@ -31,6 +31,7 @@ h2 {
   gap: 60px; /* Espacio entre tarjetas */
   padding: 20px;
     white-space: nowrap;
+    margin-bottom: 80px; /* Espacio para el footer */
 
 }
 
@@ -84,6 +85,7 @@ footer {
     padding: 5px 0;
     border-top: 1px solid #333;
     z-index: 100;
+    margin-top: 20px;
 }
 
 footer a {
