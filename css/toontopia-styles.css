@@ -26,8 +26,30 @@ body {
     }
 
 @media (max-width: 576px) {
+      body {
+        font-size: 1.1em;
+      }
+      .card {
+        margin: auto;
+        padding: 10px;
+      }
       .card img {
         max-height: 250px;
+      }
+      .card-title {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      .text-secondary {
+        font-size: 0.95rem;
+        text-align: center;
+      }
+      h1, h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .container.my-5 {
+        margin-bottom: 6rem !important;
       }
     }
     footer {
