@@ -1,14 +1,17 @@
- document.addEventListener("DOMContentLoaded", function () {
-      const secciones = document.querySelectorAll(".carousel-inner");
-      let episodioGlobal = 1;
-      secciones.forEach(seccion => {
-        const cards = seccion.querySelectorAll(".card");
-        cards.forEach(card => {
-          const p = document.createElement("p");
-          p.textContent = `Episodio ${episodioGlobal}`;
-          p.className = "text-secondary m-0 px-3 pb-3";
-          card.querySelector("a").appendChild(p);
-          episodioGlobal++;
+document.addEventListener("DOMContentLoaded", function () {
+        const galerias = document.querySelectorAll("section.gallery");
+        let episodioGlobal = 1;
+
+        galerias.forEach(galeria => {
+          const cards = galeria.querySelectorAll(".card");
+          cards.forEach(card => {
+            const titulo = card.querySelector("h2");
+            if (titulo) {
+              const numero = document.createElement("p");
+              numero.textContent = `Episodio ${episodioGlobal++}`;
+              numero.classList.add("episodio-numero");
+              titulo.insertAdjacentElement("afterend", numero);
+            }
+          });
         });
       });
-    });
