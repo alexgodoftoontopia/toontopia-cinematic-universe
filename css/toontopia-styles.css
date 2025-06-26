@@ -1,69 +1,191 @@
-body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
-      padding-bottom: 60px;
-    }
-    .card img {
-      object-fit: cover;
-      max-height: 400px;
-      border-radius: 0.5rem;
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 5px 0;
-      border-top: 1px solid #333;
-      z-index: 100;
-    }
-    footer a {
-      color: #09d4e7;
-      text-decoration: none;
-    }
+/* ================= VARIABLES DE COLOR ================= */
+:root {
+  --c-bg: #ffffff;
+  --c-text: #222222;
+  --c-primary: #0073e6;
+  --c-card: #f5f5f5;
+}
 
-@media (max-width: 576px) {
-      body {
-        font-size: 1.1em;
-      }
-      .card {
-        margin: auto;
-        padding: 10px;
-      }
-      .card img {
-        max-height: 250px;
-      }
-      .card-title {
-        font-size: 1.2rem;
-        text-align: center;
-      }
-      .text-secondary {
-        font-size: 0.95rem;
-        text-align: center;
-      }
-      h1, h2 {
-        font-size: 1.5rem;
-        text-align: center;
-      }
-      .container.my-5 {
-        margin-bottom: 6rem !important;
-      }
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 5px 0;
-      border-top: 1px solid #333;
-      z-index: 100;
-    }
-    footer a {
-      color: #09d4e7;
-      text-decoration: none;
-    }
+.dark {
+  --c-bg: #1a1a1a;
+  --c-text: #e0e0e0;
+  --c-primary: #66aaff;
+  --c-card: #2a2a2a;
+}
+
+/* ================ RESET BÁSICO ======================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: var(--c-bg);
+  color: var(--c-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ================ BOTÓN TEMA ========================== */
+.btn-theme {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: var(--c-primary);
+  color: #fff;
+  z-index: 1000;
+}
+
+/* ================ HEADER & NAV ======================= */
+header {
+background-color: #0073e6; /* Color de fondo del header */
+text-align: center; /* Centrar el texto */
+color: #ffffff; /* Color del texto */
+padding: 1rem 0; /* Espaciado interno */
+margin-top: 2rem; /* Espacio superior */
+margin-bottom: 2rem; /* Espacio inferior */
+}
+
+.logo {
+width: 40rem; /* Ancho de la imagen del logo */
+height: auto; /* Altura automática para mantener la proporción */
+}
+
+nav a {
+
+  color: #ffffff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  display: flexbox; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+
+
+}
+
+nav a:hover {
+  color: #ffcc00; /* Color al pasar el ratón */ 
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+#estrellas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.estrella {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ================ GALERÍA ============================ */
+
+h1 {
+  text-align: center; /* Centrar el título */
+  margin-bottom: 2rem; /* Espacio inferior */
+  color: var(--c-text); /* Color del texto del título */
+}
+
+.gallery {
+
+display: grid; /* Usar grid para la galería */
+  grid-template-columns: 1fr; /* Una columna por defecto */
+  gap: 20px; /* Espacio entre elementos */
+  max-width: 1000px; /* Ancho máximo de la galería */
+  margin: auto; /* Centrar la galería */
+  padding: 1rem; /* Espaciado interno */
+
+}
+
+body.dark-mode {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+header.dark-mode,
+footer.dark-mode {
+  background-color: #222;
+}
+
+.episodio-numero {
+  color: #09d4e7;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* 3 columnas en pantallas grandes, 1 en móviles */
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+  }
+}
+
+
+.card {
+
+  background-color: var(--c-card); /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Ocultar desbordamiento */
+  text-align: center; /* Centrar el texto */
+  transition: transform 0.2s ease; /* Transición suave al hacer hover */
+  
+}
+
+.card:hover {
+
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+
+
+}
+
+.card img {
+
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* Mostrar como bloque para evitar espacios debajo de la imagen */
+
+
+}
+
+.card h2 {
+
+  font-size: 1.1rem; /* Tamaño de fuente del título */
+  margin: 10px 0; /* Espacio arriba y abajo del título */
+  color: var(--c-text); /* Color del texto del título */
+ 
+}
+
+/* ================= FOOTER (fade-in) ================= */
+footer {
+
+  background-color: #0073e6; /* Color de fondo del footer */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 1rem 0; /* Espaciado interno */
+  margin-top: 2rem; /* Espacio superior */
+  animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Opacidad final */
+  }
+}
