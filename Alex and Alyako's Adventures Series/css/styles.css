@@ -1,0 +1,53 @@
+/* Tipografía */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/AlexAdventuresSeries.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: yellowgreen;
+    padding: 100px 0;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    text-align: center;
+    color: #4394e6;
+}
+
+/* Enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Botones */
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Contenedores */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Espaciado */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
