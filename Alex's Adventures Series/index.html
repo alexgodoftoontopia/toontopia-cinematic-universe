@@ -1,96 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex's Adventures Series</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans p-4">
+<body class="bg-light">
 
-  <header class="text-center mb-10">
-    <h1 class="text-4xl font-bold text-purple-700 mb-2">Alex's Adventures Series</h1>
-    <a href="../index.html" class="text-lg italic text-gray-600">Inicio</a>
+  <header class="bg-dark text-white text-center py-4 mb-4">
+    <h1>Alex's Adventures Series</h1>
   </header>
 
-  <!-- Temporada ejemplo -->
-  <section class="max-w-4xl mx-auto bg-white shadow-md rounded-xl p-6 mb-10">
-  <h2 class="text-2xl font-semibold text-blue-600 mb-4">Temporada 1</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <!-- Card de episodio -->
-    <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-      <img src="img/Alex-Meets-Dumbo.jpg" alt="Dumbo" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Alex meets Dumbo</h3>
-      </div>
-    </div>
-    
-    <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-      <img src="img/Alex-Meets-The-Hunchback-of-Notre-Dame.jpg" alt="The Hunchback of Notre Dame" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Alex meets The Hunchback of Notre Dame</h3>
-      </div>
-    </div>
-    
-    <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-      <img src="img/Alex-Meets-Aladdin.jpg" alt="Aladdin" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Alex meets Aladdin</h3>
-      </div>
-    </div> 
-    <!-- Puedes repetir más cards -->
-
-  </div>
-</section>
-
-<section class="max-w-4xl mx-auto bg-white shadow-md rounded-xl p-6 mb-10">
-  <h2 class="text-2xl font-semibold text-blue-600 mb-4">Sally's Adventures Seriess</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <!-- Card de episodio -->
-    <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-      <img src="img/Sally-Meets-101-Dalmatians.jpg" alt="101 Dalmatians" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Sally meets 101 Dalmatians</h3>
-      </div>
-    </div>
-     <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-      <img src="img/Sally's-Adventures-of-Pokemon-The-Firts-Movie.jpg" alt="Pokemon The First Movie" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Sally's Adventures of Pokemon The First Movie</h3>
-      </div>
-    </div>
-    </div>
-</section>
-
-<!--spin-off -->
-  <section class="max-w-4xl mx-auto bg-white shadow-md rounded-xl p-6 mb-10">
-    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Spin-off</h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <!-- Card de episodio -->
-      <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-        <a href="https://trio-luna.netlify.app/">
-            <img src="img/the_luna_trio_singing_by_lordshrekzilla20_dh5xxx7-pre.jpg" alt="Trio Luna's Adventures Series" class="w-full h-64 object-cover">
-          </a>
-        <div class="p-4">
-          <h3 class="text-lg font-bold">Trio Luna's Adventures Series</h3>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 rounded-lg overflow-hidden shadow">
-        <a href="Esdeath-Adventures.html">
-        <img src="img/esdeath-albedo-revy.webp" alt="Esdeath, Albedo and Revy’s Adventures Series" class="w-full h-64 object-cover">
-        </a>
-        <div class="p-4">
-          <h3 class="text-lg font-bold">Esdeath’s Adventures Series</h3>
-        </div>
-      </div>
+  <main class="container">
+    <div class="mb-4">
+      <p class="lead">
+       Alex's Adventures Series tiene lugar despues de My Little Pony, Equestria Girls, Hazbin Hotel y Helluva Boss, y sigue las aventuras de Alex, un joven que descubre un portal mágico que lo transporta a diferentes mundos llenos de personajes icónicos y emocionantes desafíos. A lo largo de la serie, Alex se encuentra con héroes y villanos de diversos universos, formando alianzas inesperadas y enfrentándose a peligrosas amenazas. Con cada aventura, Alex aprende valiosas lecciones sobre la amistad, el coraje y la importancia de creer en uno mismo. La serie combina acción, humor y momentos emotivos, ofreciendo una experiencia entretenida para espectadores de todas las edades.
+      </p>
     </div>
 
+    <!-- Temporada 1 -->
+    <section class="mb-5">
+      <h2 class="mb-3">Temporada 1</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Alex's Adventures of The Super Mario Bros Movie</li>
+        <li class="list-group-item">Alex's Adventures with Alice in Wonderland</li>
+        <li class="list-group-item">Alex Meets Pocahontas</li>
+        <li class="list-group-item">Alex Meets The Hunchback of Notre Dame</li>
+        <li class="list-group-item">Alex's Adventures of The Little Mermaid: Ariel's Beginning</li>
+        <li class="list-group-item">Alex Meets Aladdin</li>
+        <li class="list-group-item">Alex Goes to Atlantis The Lost of Empire</li>
+        <li class="list-group-item">Alex's Adventures of Transformers One</li>
+        <li class="list-group-item">Alex And The Secret of Kells</li>
+      </ul>
+    </section>
 
-  <!-- Repite esta sección para cada temporada -->
-  
+    <!-- Sally's Adventures Series -->
+    <section class="mb-5">
+      <h2 class="mb-3">Sally's Adventures Series</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Sally's Adventures of My Little Pony: Friendship is Magic</li>
+        <li class="list-group-item">Sally Meets Dumbo</li>
+        <li class="list-group-item">Sally Meets 101 Dalmatians </li>
+        <li class="list-group-item">Sally's Adventures of Pokemon The Firts Movie </li>
+        <li class="list-group-item">Sally's Adventures of The Jungle Book</li>
+        <li class="list-group-item">Sally's Adventures of We're Back a Dinosaur Story</li>
+      </ul>
+    </section>
+
+    <!-- TV Series -->
+    <section class="mb-5">
+      <h2 class="mb-3">TV Series</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Alex goes to Hazbin Hotel</li>
+        <li class="list-group-item">Sally goes to Helluva Boss</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p class="mb-1">&copy; 2025 Alex's Adventures Series. Todos los derechos reservados.</p>
+    <a href="index.html" class="text-white text-decoration-underline">Inicio</a>
+  </footer>
+
+  <!-- Bootstrap JS (opcional si no usas funcionalidades como modales o tooltips) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
