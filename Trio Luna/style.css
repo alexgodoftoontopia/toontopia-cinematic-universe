@@ -68,3 +68,140 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* ...existing code... */
+
+/* Responsive: móviles y pantallas pequeñas */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 12px 10px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+  }
+
+  .card {
+    width: calc(100% - 24px);
+    max-width: 520px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+
+  h2 {
+    margin-top: 18px;
+    font-size: 1.25rem;
+    color: #004a63;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+
+  footer {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin-top: 6px;
+  }
+}
+
+/* Ajustes extra para pantallas muy pequeñas */
+@media (max-width: 420px) {
+  .card {
+    padding: 12px;
+    width: calc(100% - 16px);
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+
+/* Responsive: móviles y pantallas pequeñas */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 12px 10px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+  }
+
+  .card {
+    width: calc(100% - 24px);
+    max-width: 520px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+
+  h2 {
+    margin-top: 18px;
+    font-size: 1.25rem;
+    color: #004a63;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+
+  footer {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin-top: 6px;
+  }
+}
+
+/* Ajustes extra para pantallas muy pequeñas */
+@media (max-width: 420px) {
+  .card {
+    padding: 12px;
+    width: calc(100% - 16px);
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
