@@ -1,25 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-        const galerias = document.querySelectorAll("section.gallery");
-        let episodioGlobal = 1;
+// ...existing code...
+document.addEventListener("DOMContentLoaded", () => {
+  // eliminar numeraciones previas para evitar duplicados
+  document.querySelectorAll('.episodio-numero').forEach(n => n.remove());
 
-        galerias.forEach(galeria => {
-          const cards = galeria.querySelectorAll(".card");
-          cards.forEach(card => {
-            const titulo = card.querySelector("h2");
-            if (titulo) {
-              const numero = document.createElement("p");
-              numero.textContent = `Episodio ${episodioGlobal++}`;
-              numero.classList.add("episodio-numero");
-              titulo.insertAdjacentElement("afterend", numero);
-            }
-          });
-        });
-      });
+  // seleccionar todas las .card que NO sean especiales, en el orden DOM
+  const cards = document.querySelectorAll('section.gallery .card:not(.special-card)');
 
-      // Selecciona solo .card que NO tengan la clase .special-card
-document.querySelectorAll('.gallery .card:not(.special-card)').forEach((card, i) => {
-  const num = document.createElement('div');
-  num.className = 'episodio-numero';
-  num.textContent = `Episodio ${i + 1}`;
-  card.prepend(num);
+  cards.forEach((card, i) => {
+    const num = document.createElement('p');
+    num.className = 'episodio-numero';
+    num.textContent = `Episodio ${i + 1}`; // empieza en 1 desde la primera tarjeta no especial
+    const titulo = card.querySelector('h2');
+    if (titulo) {
+      titulo.insertAdjacentElement('afterend', num);
+    } else {
+      card.prepend(num);
+    }
+  });
 });
+// ...existing code...
