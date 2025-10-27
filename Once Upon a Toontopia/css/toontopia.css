@@ -84,6 +84,7 @@ footer {
     width: 100%;
 }
 
+/* Estilos para la sección especial con tarjeta e insignia */
 .special-section {
   margin-bottom: 2rem;
   display: flex;
