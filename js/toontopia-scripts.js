@@ -15,3 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         });
       });
+
+      // Selecciona solo .card que NO tengan la clase .special-card
+document.querySelectorAll('.gallery .card:not(.special-card)').forEach((card, i) => {
+  const num = document.createElement('div');
+  num.className = 'episodio-numero';
+  num.textContent = `Episodio ${i + 1}`;
+  card.prepend(num);
+});
