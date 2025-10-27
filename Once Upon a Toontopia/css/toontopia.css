@@ -84,39 +84,6 @@ footer {
     width: 100%;
 }
 
-/* Estilos para la sección especial con tarjeta e insignia */
-.special-section {
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-}
-.special-card {
-  position: relative;
-  max-width: 420px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  background: var(--card-bg, #111);
-}
-.special-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: #e63946;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  z-index: 2;
-}
-
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Ajustar el cuerpo */
