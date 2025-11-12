@@ -205,3 +205,8 @@ footer a:hover {
     font-size: 15px;
   }
 }
+
+/* Auto-enumeración para listas */
+    ul.auto-list { counter-reset: item; list-style: none; padding-left: 0; }
+    ul.auto-list li { counter-increment: item; margin: 0.25rem 0; }
+    ul.auto-list li::before { content: counter(item) ": "; font-weight: 700; }
