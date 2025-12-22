@@ -73,7 +73,7 @@ nav a {
 
 nav a:hover {
   color: #ffcc00; /* Color al pasar el ratón */ 
-  text-decoration: underline; /* Subrayar al pasar el ratón */
+  text-decoration: none; /* No subrayar al pasar el ratón */
 }
 
 #estrellas {
@@ -282,4 +282,15 @@ footer {
     padding: 0.8rem 0;
     margin-top: 3rem; /* Espacio extra entre galería y footer */
   }
+}
+
+/* === Reinicio global para enlaces: quitar subrayado en todo el sitio === */
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
 }
