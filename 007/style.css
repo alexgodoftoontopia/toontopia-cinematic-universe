@@ -213,3 +213,18 @@ footer a:hover {
     ul.auto-list { counter-reset: item; list-style: none; padding-left: 0; }
     ul.auto-list li { counter-increment: item; margin: 0.25rem 0; }
     ul.auto-list li::before { content: counter(item) ": "; font-weight: 700; }
+
+/* Desktop: fila en pantallas grandes, columna en móviles */
+@media (min-width: 1000px) {
+  main {
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    max-width: none;
+  }
+}
